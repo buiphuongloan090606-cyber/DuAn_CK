@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgGiay"
+        android:layout_width="125dp"
+        android:layout_height="145dp"
+        android:padding="5dp"
+        android:src="@drawable/nike"
+        android:background="#FBE3E8"
+         />
+
+    <!-- NỘI DUNG BÊN PHẢI -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tenGiay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tên sản phẩm"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#172B4D" />
+            <Button
+                android:id="@+id/btnThemGioHang"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_giohang"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/loaiGiay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phân loại "
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginTop="4dp" />
+
+        <!-- Đánh giá -->
+        <TextView
+            android:id="@+id/DanhGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★★★★★ 4.8"
+            android:textSize="14sp"
+            android:textColor="#FFB300"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:id="@+id/tvGiaGiay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="189.00 đ"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#F32645"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

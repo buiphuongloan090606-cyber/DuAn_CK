@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7F8"
+    tools:context=".MainActivity_TrangChu">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:text="Xin chao ban"/>
+        <Button
+            android:id="@+id/TC_btn_gioHanh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_giohang"
+
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botron"
+        android:hint="  Tìm sản phẩm ..."
+        android:padding="15dp"
+        android:textSize="12dp"
+        android:layout_marginTop="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/botron_trangchu"
+
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="15dp"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khám phá ngay"
+                android:textSize="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BEYONO WARRIOR"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trải nghiệm hoàn toàn mới cho dòng giày thể thap. Êm ái khi bật nhảy, vững vàng khi tiếp đất ."
+                android:textSize="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <Button
+                android:layout_width="72dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:text="Mua ngay"
+                android:textSize="10dp"
+                android:backgroundTint="#C9305F"
+
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+
+            android:src="@drawable/img"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh mục"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+        <Button
+            android:id="@+id/btn_user_danhMuc"
+            android:layout_width="88dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:backgroundTint="#C9305F"
+            android:text="Tất cả"/>
+
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giày Nam"
+            android:layout_marginEnd="7dp"
+            android:backgroundTint="#F8C8D4"
+            android:textColor="#465344"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giày Nam"
+            android:layout_marginEnd="7dp"
+            android:backgroundTint="#F8C8D4"
+            android:textColor="#465344"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:backgroundTint="#F8C8D4"
+            android:textColor="#465344"
+            android:text="Giày Nam" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F8C8D4"
+            android:textColor="#F8C8D4"
+            android:text="Giày Nam"
+            android:layout_marginEnd="7dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F8C8D4"
+            android:textColor="#465344"
+            android:text="Giày Nam"
+            android:layout_marginEnd="7dp"
+            />
+
+    </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Trending Now"
+        android:layout_marginTop="10dp"/>
+    <ListView
+        android:id="@+id/user_lvTrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
