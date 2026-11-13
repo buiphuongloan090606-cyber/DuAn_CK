@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".user_danhMuc" />
         <activity android:name=".user_GioHang" />
+        <activity android:name=".user_Mota" />
 
     </application>
 

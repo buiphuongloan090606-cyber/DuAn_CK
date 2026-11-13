@@ -3,11 +3,11 @@ package com.example.myapplication.Giay;
 import android.net.Uri;
 
 public class Giay {
-    String tenGiay;
-    String loaiGiay;
-    String DanhGia;
-    long tvGiaGiay;
-    Uri imgGiay;
+    public String tenGiay;
+    public String loaiGiay;
+    public String DanhGia;
+    public long tvGiaGiay;
+    public Uri imgGiay;
 
     public Giay(String tenGiay, String loaiGiay, String danhGia, long tvGiaGiay, Uri imgGiay) {
         this.tenGiay = tenGiay;

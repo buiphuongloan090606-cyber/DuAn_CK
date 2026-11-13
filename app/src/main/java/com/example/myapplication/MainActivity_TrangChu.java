@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -56,6 +57,20 @@ public class MainActivity_TrangChu extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent_GioHang = new Intent(MainActivity_TrangChu.this, user_GioHang.class);
                 startActivity(intent_GioHang);
+            }
+        });
+        lvGiay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Giay giayChon = dsGiay.get(position);
+                Intent intent_MoTa = new Intent(MainActivity_TrangChu.this, user_Mota.class);
+                intent_MoTa.putExtra("tenGiay", giayChon.tenGiay);
+                intent_MoTa.putExtra("loaiGiay", giayChon.loaiGiay);
+                intent_MoTa.putExtra("giaGiay", giayChon.tvGiaGiay);
+                if (giayChon.imgGiay != null) {
+                    intent_MoTa.putExtra("imgGiay", giayChon.imgGiay.toString());
+                }
+                startActivity(intent_MoTa);
             }
         });
 
